@@ -51,7 +51,7 @@ v-app
           v-layout(row)
             v-flex(xs4 v-for="(icon, j) in icons1" :key="j").text-center
               a(:href="icon.href")
-                img(:src="icon.src")
+                img(:src="icon.src", alt=images_alt)
                 p {{ icon.p1 }}
               p {{ icon.p2 }}
       v-carousel-item
@@ -59,7 +59,7 @@ v-app
           v-layout(row)
             v-flex(xs4 v-for="(icon, j) in icons2" :key="j").text-center
               a(:href="icon.href")
-                img(:src="icon.src")
+                img(:src="icon.src", alt=images_alt)
                 p {{ icon.p1 }}
               p {{ icon.p2 }}
 </template>
